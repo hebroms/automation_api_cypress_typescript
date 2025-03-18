@@ -1,0 +1,26 @@
+trigger:
+  - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '18.x'
+    displayName: 'Instalar Node.js'
+
+  - script: npm install
+    displayName: 'Instalar dependências'
+
+  - script: npx cypress run
+    displayName: 'Executar testes Cypress'
+
+  - script: npm run allure:generate
+    displayName: 'Gerar relatório Allure'
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathToPublish: 'allure-report'
+      artifactName: 'Allure Report'
+    displayName: 'Publicar Relatório Allure'

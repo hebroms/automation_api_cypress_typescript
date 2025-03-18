@@ -1,0 +1,8 @@
+export const MARITAL_STATUSES = [
+    "SINGLE",
+    "MARRIED",
+    "DIVORCED",
+    "WIDOWED",
+    "LEGALLY_SEPARATED",
+    "COMMON_LAW_MARRIAGE"
+];

@@ -1,0 +1,36 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+cypress/reports/
+cypress/results/
+
+# Allure Reports
+allure-results/
+allure-report/
+
+# Mochawesome Reports
+mochawesome-report/
+mochawesome.json
+
+# VS Code
+.vscode/
+
+# Environment files
+.env
+.env.local
+.env.*
+
+# Logs
+logs/
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
