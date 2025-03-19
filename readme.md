@@ -2,7 +2,7 @@
 
 ## 📦 Estrutura do Projeto
 ```
-bankizi_automation_api_e2e_cypress/
+automation_api_e2e_cypress/
 │── cypress/
 │   ├── e2e/
 │   │   ├── features/           # Cenários em Gherkin
